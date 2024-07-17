@@ -32,5 +32,17 @@ module.exports = {
             result: data
         })
     },
-    
+
+    update: async (req, res) => {
+        const data = await Book.update(req.body, {where: {id: req.params.id}})
+        res.status(202).send({
+            error: false,
+            result: data
+        })
+        console.log(data)
+    }
+
 }
+
+/* "await" anahtar kelimesi, async işlev içinde kullanıldığında, asenkron işlemlerin sonuçlarını beklemek için 
+kullanılır ve kodun daha okunabilir olmasını sağlar. */

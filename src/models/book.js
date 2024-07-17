@@ -1,4 +1,7 @@
 "use strict"
+/* ---------------------------------------------------
+        EXPRESSJS - MODEL FOR BOOK
+-----------------------------------------------------*/
 
 const { DataTypes } = require('sequelize')
 const sequelize = require('../dbConnection')

@@ -9,7 +9,7 @@ const app = express()
 
 // Import the dotenv library
 require('dotenv').config()
-const PORT = process.env.PORT ?? 8000
+const PORT = process.env.PORT || 8000
 
 // For catching async errors
 require('express-async-errors')

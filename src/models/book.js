@@ -44,6 +44,8 @@ const Book = sequelize.define('Book', {
 
 })
 
+// sequelize.sync()
+
 module.exports = Book
 
 

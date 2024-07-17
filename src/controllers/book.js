@@ -23,5 +23,14 @@ module.exports = {
             result: data
         })
 
-    }
+    },
+
+    read: async (req, res) => {
+        const data = await Book.findByPk(req.params.id)
+        res.status(200).send({
+            error: false,
+            result: data
+        })
+    },
+    
 }

@@ -40,6 +40,14 @@ module.exports = {
             result: data
         })
         console.log(data)
+    },
+
+    delete: async (req, res) => {
+        const data = await Book.destroy({where: {id: req.params.id}})
+        res.status(204).send({
+            error: false,
+            result: data
+        })
     }
 
 }

@@ -17,6 +17,8 @@ require('express-async-errors')
 // For accepting json data
 app.use(express.json())
 
+// DB Connection
+require('./src/dbConnection')
 
 // For catching the errors
 app.use(require('./src/middlewares/errorHandler'))

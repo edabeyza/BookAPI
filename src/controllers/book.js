@@ -14,7 +14,14 @@ module.exports = {
             error: false,
             result: data
        })
-    }
+    },
 
-    create: async (req, res)
+    create: async (req, res) =>{
+        const data = await Book.create(req.body)
+        res.status(201).send({
+            error: false,
+            result: data
+        })
+
+    }
 }

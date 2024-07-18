@@ -78,13 +78,13 @@ POST /api/book
 GET /api/book
 ```
 
-### Get a Single Book
+### To Get a Single Book
 
 ```http
 GET /api/book/:id
 ```
 
-### Update a Book
+### To Update a Book
 
 ```http
 PUT /api/book/:id

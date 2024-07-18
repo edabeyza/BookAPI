@@ -21,7 +21,7 @@ app.use(express.json())
 require('./src/dbConnection')
 
 // Routes
-app.use(require('./src/routes/book'))
+app.use('/api',require('./src/routes/book'))
 
 // For catching the errors
 app.use(require('./src/middlewares/errorHandler'))

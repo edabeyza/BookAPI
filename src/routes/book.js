@@ -7,11 +7,11 @@ const router = require('express').Router()
 
 const book = require('../controllers/book')
 
-router.route('/')
+router.route('/book')
     .get(book.list)
     .post(book.create)
 
-router.route('/:id')
+router.route('book/:id')
     .get(book.read)
     .put(book.update)
     .delete(book.delete)

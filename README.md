@@ -106,5 +106,5 @@ PUT /api/book/:id
 ### Delete a Book
 
 ```http
-DELETE /api/books/:id
+DELETE /api/book/:id
 ```
